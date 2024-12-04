@@ -1,3 +1,5 @@
+include: package:flutter_lints/flutter.yaml
+
 analyzer:
   exclude:
     - "build/**"
@@ -49,7 +51,6 @@ analyzer:
     # Error
     always_use_package_imports: error
     avoid_relative_lib_imports: error
-    avoid_slow_async_io: error
     avoid_types_as_parameter_names: error
     valid_regexps: error
     always_require_non_null_named_parameters: error
@@ -92,6 +93,8 @@ linter:
     # Disable rules
     sort_pub_dependencies: false
     prefer_relative_imports: false
+    avoid_slow_async_io: false
+
 
     # Enabled
     use_named_constants: true
@@ -111,7 +114,6 @@ linter:
     avoid_renaming_method_parameters: true
     avoid_returning_null_for_void: true
     avoid_single_cascade_in_expression_statements: true
-    avoid_slow_async_io: true
     avoid_unnecessary_containers: true
     avoid_unused_constructor_parameters: true
     avoid_void_async: true
@@ -143,7 +145,7 @@ linter:
     prefer_constructors_over_static_methods: true
     prefer_expression_function_bodies: true
     prefer_final_in_for_each: true
-    prefer_foreach: true
+    prefer_foreach: false
     prefer_if_elements_to_conditional_expressions: true
     prefer_inlined_adds: true
     prefer_int_literals: true
@@ -186,7 +188,7 @@ linter:
     library_prefixes: true
     no_duplicate_case_values: true
     null_closures: true
-    omit_local_variable_types: true
+    omit_local_variable_types: false
     prefer_adjacent_string_concatenation: true
     prefer_collection_literals: true
     prefer_conditional_assignment: true
@@ -296,7 +298,6 @@ linter:
     prefer_final_locals: true
     prefer_null_aware_method_calls: true
     public_member_api_docs: false
-    require_trailing_commas: false
     secure_pubspec_urls: true
     sized_box_shrink_expand: true
     tighten_type_of_initializing_formals: true
@@ -308,7 +309,7 @@ linter:
     unnecessary_null_checks: true
     unnecessary_nullable_for_final_variable_declarations: true
     unnecessary_to_list_in_spreads: true
-    unreachable_from_main: true
+    unreachable_from_main: false
     use_colored_box: true
     use_decorated_box: true
     use_enums: true
@@ -318,4 +319,5 @@ linter:
     use_string_in_part_of_directives: true
     use_super_parameters: true
     use_test_throws_matchers: true
+    require_trailing_commas: true
 
