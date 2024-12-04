@@ -94,6 +94,9 @@ linter:
     sort_pub_dependencies: false
     prefer_relative_imports: false
     avoid_slow_async_io: false
+    prefer_foreach: false
+    omit_local_variable_types: false
+    avoid_classes_with_only_static_members: false
 
 
     # Enabled
@@ -145,7 +148,6 @@ linter:
     prefer_constructors_over_static_methods: true
     prefer_expression_function_bodies: true
     prefer_final_in_for_each: true
-    prefer_foreach: false
     prefer_if_elements_to_conditional_expressions: true
     prefer_inlined_adds: true
     prefer_int_literals: true
@@ -188,7 +190,6 @@ linter:
     library_prefixes: true
     no_duplicate_case_values: true
     null_closures: true
-    omit_local_variable_types: false
     prefer_adjacent_string_concatenation: true
     prefer_collection_literals: true
     prefer_conditional_assignment: true
@@ -232,7 +233,6 @@ linter:
     avoid_catches_without_on_clauses: true
     avoid_catching_errors: true
     use_to_and_as_if_applicable: true
-    avoid_classes_with_only_static_members: false
     prefer_mixin: true
     use_setters_to_change_properties: true
     avoid_setters_without_getters: true
@@ -258,9 +258,9 @@ linter:
     use_key_in_widget_constructors: true
 
     # Style rules.
-    always_put_control_body_on_new_line: false
     always_require_non_null_named_parameters: true
     always_specify_types: false
+    always_put_control_body_on_new_line: false
     avoid_escaping_inner_quotes: true
     avoid_final_parameters: true
     avoid_multiple_declarations_per_line: true
